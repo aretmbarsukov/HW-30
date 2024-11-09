@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    height: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: moveAndColor 3s linear infinite;
+}
+
+@keyframes moveAndColor {
+    0% {
+        transform: translate(0, 0);
+        background-color: #4CAF50;
+    }
+    25% {
+        transform: translate(100px, 0);
+        background-color: #FF5722;
+    }
+    50% {
+        transform: translate(100px, 100px);
+        background-color: #2196F3;
+    }
+    75% {
+        transform: translate(0, 100px);
+        background-color: #9C27B0;
+    }
+    100% {
+        transform: translate(0, 0);
+        background-color: #4CAF50;
+    }
+}
